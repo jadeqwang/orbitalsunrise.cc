@@ -205,10 +205,7 @@ h2.big { font-family: var(--f-display); font-weight: 400; text-transform: upperc
 .ring .cap-text a { color: var(--gold); }
 
 /* ── void to paper ─────────────────────────────────────── */
-.turn { height: clamp(9rem, 24vw, 16rem); background: linear-gradient(to bottom, var(--void) 0%, var(--void-2) 30%, var(--paper) 100%); display: grid; place-items: center; }
-.turn { place-items: start center; padding-top: clamp(2.5rem, 6vw, 4rem); }
-.turn p { margin: 0; font: 600 .68rem/1.6 var(--f-mono); letter-spacing: .2em; text-transform: uppercase; color: var(--silver); text-align: center; }
-.turn p span { color: var(--cream); }
+.turn { height: clamp(9rem, 24vw, 16rem); background: linear-gradient(to bottom, var(--void) 0%, var(--void-2) 30%, var(--paper) 100%); }
 
 /* ── paper: the math (the published math page, folded in) ── */
 .paper { background: var(--paper); color: var(--graphite); }
@@ -476,14 +473,13 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
     <figcaption>
       <p class="kicker" id="ring-h">2:25 · The math in his head</p>
       <p class="cap-lyric">&ldquo;Doing the math with a spinning sun.&rdquo;</p>
-      <p class="cap-text">The ring is the math from the pages below: the orbit&rsquo;s period, the engine&rsquo;s push, how far the ground slides under a late burn. We wanted to populate the equations around Leonov's head with the calculations he likely would have made in real life. This is our best estimate based on Leonov's memoir, mission flight logs, weather models, and more. <a href="#math">Read the math&nbsp;&darr;</a></p>
+      <p class="cap-text">The ring is the math from the pages below: the orbit&rsquo;s period, the engine&rsquo;s push, how far the ground slides under a late burn. We wanted to populate the equations around Leonov's head with the calculations he likely would have made in real life. This is our best estimate based on Leonov's memoirs, mission flight logs, weather models, and more. <a href="#math">Read the math&nbsp;&darr;</a></p>
     </figcaption>
   </figure>
 </section>
 
-<div class="turn gutter" aria-hidden="true"><p>Space is black paper · <span>Earth is white paper</span></p></div>
-
 <!-- ═══════════ PAPER ═══════════ -->
+<div class="turn" aria-hidden="true"></div>
 <div class="paper">
 <article class="math gutter" id="math" aria-labelledby="math-h">
 <header class="hero">
