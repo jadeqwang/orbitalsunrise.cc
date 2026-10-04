@@ -7,8 +7,17 @@
 <meta name="description" content="Orbital Sunrise, a music video by Jade Wang about Alexei Leonov's first spacewalk and the hand-flown landing of Voskhod-2. Every frame drawn in colored pencil by JavaScript.">
 <meta property="og:title" content="Orbital Sunrise">
 <meta property="og:description" content="Song and lyrics by Jade Wang. Every frame drawn in colored pencil by JavaScript.">
-<meta property="og:image" content="img/poster.jpg">
+<meta property="og:image" content="https://orbitalsunrise.cc/img/g2_math_ring.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="Leonov in his helmet surrounded by handwritten orbital equations, with the lyric Doing the math with a spinning sun.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://orbitalsunrise.cc/img/g2_math_ring.jpg">
+<meta name="twitter:image:alt" content="Leonov in his helmet surrounded by handwritten orbital equations, with the lyric Doing the math with a spinning sun.">
 <meta name="theme-color" content="#0d0c10">
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png" sizes="180x180">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600;700&family=Oswald:wght@700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
@@ -146,7 +155,6 @@ h2.big { font-family: var(--f-display); font-weight: 400; text-transform: upperc
 .song { display: grid; gap: clamp(2.2rem, 5vw, 3.4rem); }
 .part { display: grid; gap: .35rem; }
 .part > h3 { margin: 0 0 .5rem; font: 600 .68rem/1.4 var(--f-mono); letter-spacing: .18em; text-transform: uppercase; color: var(--dim); display: flex; gap: .8rem; align-items: baseline; flex-wrap: wrap; }
-.part > h3 i { font-style: normal; color: var(--silver); letter-spacing: .08em; text-transform: none; }
 .part ol { list-style: none; margin: 0; padding: 0; display: grid; gap: .15rem; }
 .ln {
   all: unset; box-sizing: border-box; display: grid; grid-template-columns: 3.4rem minmax(0, 1fr); gap: .75rem; align-items: baseline;
@@ -179,8 +187,6 @@ h2.big { font-family: var(--f-display); font-weight: 400; text-transform: upperc
 .ru-echo { display: block; font: 700 clamp(.95rem, 2.6vw, 1.4rem)/1.2 var(--f-cyr); letter-spacing: .14em; color: var(--verm); margin: .35rem 0 0 calc(3.4rem + .75rem); }
 .ru-echo.white { color: var(--silver); font-weight: 700; }
 @media (max-width: 420px) { .ru-echo { margin-left: calc(2.7rem + .5rem); } }
-.instr { font: 400 .75rem/1.5 var(--f-mono); color: var(--dim); letter-spacing: .06em; margin-left: calc(3.4rem + .75rem); }
-@media (max-width: 420px) { .instr { margin-left: calc(2.7rem + .5rem); } }
 
 /* stills set into the lyric sheet */
 .still { margin: .4rem 0 0; display: grid; gap: .5rem; }
@@ -316,6 +322,7 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
   </div>
   <div class="film-notes">
     <span id="video-note">4:12 · 1920 × 1080 · 24 fps</span>
+    <a href="https://www.youtube.com/watch?v=wNRgUtTCNIA" target="_blank" rel="noopener noreferrer">Watch on YouTube &nearr;</a>
   </div>
 </section>
 
@@ -342,7 +349,7 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
 
   <div class="song" id="song">
     <div class="part">
-      <h3>Intro <i>filtered, low-passed, half-whispered</i></h3>
+      <h3>Intro</h3>
       <ol>
         <li><button class="ln" data-t0="7.97" data-t1="13.89"><span class="t"></span><span class="w her">First man floating in the void of space</span></button></li>
         <li><button class="ln" data-t0="13.89" data-t1="20.51"><span class="t"></span><span class="w her">Tied to the ship by the slightest trace</span></button></li>
@@ -366,7 +373,7 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
     </div>
 
     <div class="part">
-      <h3>Pre-chorus <i>filter opens, snare roll builds</i></h3>
+      <h3>Verse</h3>
       <ol>
         <li><button class="ln" data-t0="56.43" data-t1="60.25"><span class="t"></span><span class="w her">So he <span class="imp">bleeds</span> the air out, breath by breath</span></button></li>
         <li><button class="ln" data-t0="60.25" data-t1="63.13"><span class="t"></span><span class="w her">Dancing on the edge of a quiet death</span></button></li>
@@ -385,7 +392,7 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
     </div>
 
     <div class="part">
-      <h3>Drop <i>instrumental, chopped vocal</i></h3>
+      <h3>Drop</h3>
       <ol>
         <li><button class="ln" data-t0="92.38" data-t1="100.47"><span class="t"></span><span class="w mid"><span class="gold">Sun-rise&hellip;</span> <span class="paren">(bring me)</span> home&hellip;</span></button></li>
         <li><button class="ln" data-t0="105.77" data-t1="115.09"><span class="t"></span><span class="w mid"><span class="gold">Sun-rise&hellip;</span> <span class="paren">(bring me)</span> home&hellip;</span></button></li>
@@ -394,13 +401,18 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
     </div>
 
     <div class="part">
-      <h3>Breakdown <i>vocal-led, stripped to pads and her voice</i></h3>
+      <h3>Verse</h3>
       <ol>
         <li><button class="ln" data-t0="116.07" data-t1="119.54"><span class="t"></span><span class="w her sub">He bleeds the air out, breath by breath</span></button></li>
         <li><button class="ln" data-t0="119.54" data-t1="122.32"><span class="t"></span><span class="w her sub">Dancing on the edge of a quiet death</span></button></li>
         <li><button class="ln" data-t0="122.32" data-t1="125.79"><span class="t"></span><span class="w her sub">I&rsquo;ll never float where the sky turns red</span></button></li>
         <li><button class="ln" data-t0="125.79" data-t1="129.09"><span class="t"></span><span class="w her sub">Never see what he saw ahead</span></button></li>
       </ol>
+      <figure class="still inset">
+        <img src="img/never_see.webp" width="1280" height="720" loading="lazy" decoding="async"
+          alt="Colored-pencil frame of Jade looking up toward the sky, headphones around her neck, beside a snowy lake and city skyline at sunset. The lyric &ldquo;Never see what he saw ahead&rdquo; appears above.">
+        <figcaption>2:08 · Never see what he saw ahead</figcaption>
+      </figure>
     </div>
 
     <div class="part">
@@ -409,15 +421,10 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
         <li><button class="ln" data-t0="130.86" data-t1="136.05"><span class="t"></span><span class="w her hand">Art is a landing in the snow</span></button></li>
         <li><button class="ln" data-t0="136.05" data-t1="140.88"><span class="t"></span><span class="w her">Can&rsquo;t think can&rsquo;t write but my hands still know</span></button></li>
       </ol>
-      <figure class="still inset">
-        <img src="img/art_is_a_landing.webp" width="1280" height="720" loading="lazy" decoding="async"
-          alt="Colored-pencil frame on white paper: a hand with a pencil writing &ldquo;Art is a landing in&rdquo; in a sketchbook.">
-        <figcaption>2:13 · White paper. Her hand, writing the line</figcaption>
-      </figure>
     </div>
 
     <div class="part">
-      <h3>Build <i>rising riser, vocal repeats and stacks</i></h3>
+      <h3>Build</h3>
       <ol>
         <li><button class="ln" data-t0="140.88" data-t1="143.67"><span class="t"></span><span class="w her"><span class="imp">Guidance failed</span> and the capsule spun</span></button></li>
         <li><button class="ln" data-t0="143.67" data-t1="146.39"><span class="t"></span><span class="w mid">Doing the math <span class="gold">with a spinning sun</span></span></button></li>
@@ -435,7 +442,7 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
     </div>
 
     <div class="part">
-      <h3>Drop <i>counter-melody chop against the supersaws</i></h3>
+      <h3>Drop</h3>
       <ol>
         <li><button class="ln" data-t0="176.49" data-t1="179.04"><span class="t"></span><span class="w mid"><span class="verm">Off course&hellip;</span> <span class="paren">(but I&rsquo;m)</span> home&hellip;</span></button></li>
         <li><button class="ln" data-t0="179.40" data-t1="181.95"><span class="t"></span><span class="w mid"><span class="verm">Off course&hellip;</span> <span class="paren">(but I&rsquo;m)</span> home&hellip;</span></button></li>
@@ -444,7 +451,7 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
     </div>
 
     <div class="part">
-      <h3>Strings <i>vocal-led, orchestral strings</i></h3>
+      <h3>Strings</h3>
       <ol>
         <li><button class="ln" data-t0="187.46" data-t1="193.36"><span class="t"></span><span class="w her"><span class="imp">Fifteen hundred <span class="verm">klicks</span></span> coming in hot</span></button></li>
         <li><button class="ln" data-t0="193.55" data-t1="197.81"><span class="t"></span><span class="w her"><span class="imp">Fifteen hundred <span class="verm">klicks</span></span> we overshot</span></button></li>
@@ -452,13 +459,12 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
     </div>
 
     <div class="part">
-      <h3>Outro <i>decisive ending</i></h3>
+      <h3>Outro</h3>
       <ol>
         <li><button class="ln" data-t0="198.12" data-t1="204.6"><span class="t"></span><span class="w mid">Made it down &mdash;</span></button></li>
         <li><button class="ln" data-t0="204.79" data-t1="208.57"><span class="t"></span><span class="w hook">Home.</span></button></li>
         <li><button class="ln" data-t0="209.09" data-t1="211.53"><span class="t"></span><span class="w mid">Made it down &mdash;</span></button></li>
       </ol>
-      <p class="instr">Instrumental outro · soft piano from the intro, ritardando to the last chord at 4:04</p>
     </div>
   </div>
 </section>
@@ -471,7 +477,7 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
     <figcaption>
       <p class="kicker" id="ring-h">2:25 · The math in his head</p>
       <p class="cap-lyric">&ldquo;Doing the math with a spinning sun.&rdquo;</p>
-      <p class="cap-text">The ring is the math from the pages below: the orbit&rsquo;s period, the engine&rsquo;s push, how far the ground slides under a late burn. Where our first draft had a wrong figure, the film writes it, crosses it out and corrects it. Below, worked out in full: what Leonov could know in those five minutes, and what we know now. <a href="#math">Read the math&nbsp;&darr;</a></p>
+      <p class="cap-text">The ring is the math from the pages below: the orbit&rsquo;s period, the engine&rsquo;s push, how far the ground slides under a late burn. We wanted to populate the equations around Leonov's head with the calculations he likely would have made in real life. This is our best estimate based on Leonov's memoir, mission flight logs, weather models, and more. <a href="#math">Read the math&nbsp;&darr;</a></p>
     </figcaption>
   </figure>
 </section>
@@ -485,13 +491,13 @@ footer.credits { max-width: 44rem; margin-inline: auto; padding-block: 3rem 4rem
   <p class="eyebrow">Orbital Sunrise · Voskhod&#8209;2 · 19 March 1965</p>
   <h2 class="mh" id="math-h">The math behind<br>&ldquo;fifteen hundred <span class="k">klicks</span>&rdquo;</h2>
   <p class="lyric">&ldquo;Fifteen hundred klicks, coming in hot &hellip; we overshot.&rdquo;</p>
-  <p class="lede-m">For viewers of <em>Orbital Sunrise</em>. A &ldquo;klick&rdquo; is soldier&rsquo;s slang for a kilometre, so the song says Voskhod&nbsp;2 came down about 1,500&nbsp;km from where it should have. The 1,500&nbsp;km is Leonov&rsquo;s own number. But it measures something different from where the capsule finally came down.</p>
+  <p class="lede-m">For viewers of <em>Orbital Sunrise</em>. A &ldquo;klick&rdquo; is soldier&rsquo;s slang for a kilometre, so the song says Voskhod&nbsp;2 came down about 1,500&nbsp;km from where it should have. 1500 km is from Leonov's memoirs. But it measures something different from where the capsule finally came down.</p>
 </header>
 
 <section id="why">
   <h3><span class="n">1</span>Why we did the math</h3>
-  <p>The song is told from inside Leonov&rsquo;s head, in the minutes after the automatics failed, when he had to work out by hand where they would come down. We wanted to know whether the line holds up. Where does the number come from? How far off did Alexei Leonov and Pavel Belyayev actually land in March 1965? And how much of the miss came from two men doing by hand what a machine was supposed to do?</p>
-  <p>The answer is better than &ldquo;right&rdquo; or &ldquo;wrong&rdquo;.</p>
+  <p>The song is told from inside Leonov&rsquo;s head, in the minutes after the automatics failed, when he had to work out by hand where they would come down. How far off did Alexei Leonov and Pavel Belyayev actually land in March 1965? And how much of the miss came from two men doing by hand what a machine was supposed to do?</p>
+  <p>To do this, it seemed simpler to just model the trajectory of the spacecraft from publicly available sources.</p>
 </section>
 
 <section id="sources">
@@ -827,7 +833,7 @@ sin 1° × 130 m/s           ≈ <span class="r">2.3 m/s</span> up or down
    Empty: the frame shows the poster still and "Film coming soon", and the lyrics stay plain text.
    Set it (e.g. 'dQw4w9WgXcQ'): the film plays from YouTube (privacy-enhanced youtube-nocookie.com)
    and the lyric lines become play-from-here buttons that light up with the song. */
-const YOUTUBE_ID = '';
+const YOUTUBE_ID = 'wNRgUtTCNIA';
 
 (function () {
   'use strict';
