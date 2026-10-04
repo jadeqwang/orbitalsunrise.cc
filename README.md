@@ -8,10 +8,10 @@ The film's code (every frame drawn in colored pencil by JavaScript) and the deta
 
 ## The film
 
-The film is embedded from YouTube. Set its video id (the part after `watch?v=`) in the one constant near the top of the `<script>` in `index.html`:
+The film is live on [YouTube](https://www.youtube.com/watch?v=wNRgUtTCNIA) and embedded on the page. Its video id (the part after `watch?v=`) is set in the one constant near the top of the `<script>` in `index.html`:
 
 ```js
-const YOUTUBE_ID = '';
+const YOUTUBE_ID = 'wNRgUtTCNIA';
 ```
 
 While it is empty, the frame shows the poster still with "Film coming soon" and the lyrics are plain text. Once it is set, the page loads the YouTube player (privacy-enhanced, youtube-nocookie.com), and tapping a lyric line plays the film from that line, with the sung line lighting up as it plays.
